@@ -1,0 +1,14 @@
+import type { HTMLAttributes } from 'react'
+import { cn } from './cn'
+
+export function Card({ className, ...props }: HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn(
+        'rounded-lg border border-border bg-surface shadow-[var(--shadow-card)] transition duration-200 hover:-translate-y-1 hover:border-primary/45',
+        className,
+      )}
+      {...props}
+    />
+  )
+}
