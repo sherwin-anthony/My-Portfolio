@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import { navItems, personalInfo } from '../data/portfolio'
-import { ButtonLink } from './ui/Button'
 import { Icon } from './ui/Icon'
 import { ThemeToggle } from './ui/ThemeToggle'
 import { cn } from './ui/cn'
@@ -42,9 +41,6 @@ export function Navbar() {
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
-          <ButtonLink href="#contact" variant="secondary">
-            Contact
-          </ButtonLink>
           <ThemeToggle />
         </div>
 

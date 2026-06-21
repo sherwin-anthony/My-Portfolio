@@ -79,7 +79,6 @@ export const skillCategories: SkillCategory[] = [
     icon: 'code',
     technologies: [
       { iconLabel: 'JA', name: 'Java' },
-      { iconLabel: 'KT', name: 'Kotlin' },
       { iconLabel: 'C#', name: 'C#' },
       { iconLabel: 'PHP', name: 'PHP' },
       { iconLabel: 'SQL', name: 'SQL' },
@@ -96,6 +95,7 @@ export const skillCategories: SkillCategory[] = [
       { iconLabel: 'TW', name: 'Tailwind CSS' },
       { iconLabel: 'HT', name: 'HTML' },
       { iconLabel: 'CS', name: 'CSS' },
+      { iconLabel: 'Next', name: 'Next.Js' },
     ],
     title: 'Frontend Development',
   },
@@ -106,7 +106,9 @@ export const skillCategories: SkillCategory[] = [
       { iconLabel: 'LV', name: 'Laravel' },
       { iconLabel: 'API', name: 'REST APIs' },
       { iconLabel: 'MVC', name: 'MVC Architecture' },
+      { iconLabel: 'Nest', name: 'NestJS' },
       { iconLabel: 'OOP', name: 'Object-Oriented Programming' },
+      
     ],
     title: 'Backend Development',
   },
@@ -114,7 +116,7 @@ export const skillCategories: SkillCategory[] = [
     description: 'Relational data modeling, query writing, and persistence for CRUD workflows.',
     icon: 'database',
     technologies: [
-      { iconLabel: 'MY', name: 'MySQL' },
+      { iconLabel: 'SQL', name: 'MySQL' },
       { iconLabel: 'PG', name: 'PostgreSQL' },
       { iconLabel: 'SB', name: 'Supabase' },
     ],
@@ -125,9 +127,9 @@ export const skillCategories: SkillCategory[] = [
     icon: 'api',
     technologies: [
       { iconLabel: 'JS', name: 'JSON' },
-      { iconLabel: 'CR', name: 'CRUD Operations' },
+      { iconLabel: 'CO', name: 'CRUD Operations' },
       { iconLabel: 'VD', name: 'Form Validation' },
-      { iconLabel: 'INT', name: 'API Integration' },
+      { iconLabel: 'API', name: 'API Integration' },
     ],
     title: 'APIs & Data Handling',
   },

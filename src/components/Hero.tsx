@@ -3,7 +3,7 @@ import { personalInfo, socialLinks } from '../data/portfolio'
 import { ButtonLink } from './ui/Button'
 import { Icon } from './ui/Icon'
 
-const heroStrengths = ['React + TypeScript', 'Laravel APIs', 'Database-backed CRUD']
+const heroStrengths = ['React with TypeScript + Laravel', 'Next.js + Nest.ts', 'PostgreSQL / Supabase',]
 
 export function Hero() {
   return (
