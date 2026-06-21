@@ -15,6 +15,21 @@ const visualStyles: Record<Project['type'], string> = {
 }
 
 function ProjectVisual({ project }: { project: Project }) {
+  if (project.imageUrl) {
+    return (
+      <div className="overflow-hidden rounded-lg border border-border bg-surface shadow-[var(--shadow-card)]">
+        <img
+          alt={`${project.title} screenshot`}
+          className="aspect-video w-full object-cover object-top"
+          height="720"
+          loading="lazy"
+          src={project.imageUrl}
+          width="1280"
+        />
+      </div>
+    )
+  }
+
   return (
     <div
       aria-label={`${project.title} screenshot placeholder`}
@@ -73,6 +88,11 @@ export function Projects() {
             </div>
 
             <div className="flex flex-1 flex-col p-6 pt-2">
+              {project.category ? (
+                <p className="mb-2 text-sm font-semibold uppercase text-primary">
+                  {project.category}
+                </p>
+              ) : null}
               <h3 className="text-2xl font-bold text-foreground">{project.title}</h3>
               <p className="mt-3 leading-7 text-muted">{project.description}</p>
 
@@ -83,7 +103,9 @@ export function Projects() {
               </div>
 
               <div className="mt-6">
-                <p className="text-sm font-semibold uppercase text-primary">Key Contributions</p>
+                <p className="text-sm font-semibold uppercase text-primary">
+                  {project.listLabel ?? 'Key Contributions'}
+                </p>
                 <ul className="mt-3 grid gap-3">
                   {project.contributions.map((contribution) => (
                     <li className="flex gap-3 text-sm leading-6 text-muted" key={contribution}>

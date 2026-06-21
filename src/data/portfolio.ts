@@ -1,3 +1,4 @@
+import managementToolScreenshot from '../assets/projects/management-tool.jpg'
 import type { IconName } from '../components/ui/Icon'
 
 export type NavItem = {
@@ -31,9 +32,12 @@ export type ExperienceItem = {
 }
 
 export type Project = {
+  category?: string
   contributions: string[]
   description: string
   githubUrl?: string
+  imageUrl?: string
+  listLabel?: string
   liveUrl?: string
   stack: string[]
   title: string
@@ -58,7 +62,8 @@ export const personalInfo = {
   resumeUrl: '/Sherwin-Anthony-Rabe-Resume.pdf',
   role: 'BS Computer Science Fresh Graduate',
   summary:
-    'A fresh graduate developer focused on building reliable, maintainable web applications with React, TypeScript, Laravel APIs, and relational databases. I enjoy turning business requirements into clean interfaces, practical data flows, and software that teams can confidently use.',
+    'A Computer Science graduate focused on building reliable and maintainable web applications. I enjoy transforming business requirements into practical software solutions through intuitive user interfaces, efficient backend systems, and data-driven applications. With experience developing analytics dashboards, business monitoring systems, and database-integrated applications, I am passionate about creating software that delivers real value while continuously improving my technical skills and problem-solving abilitiess'
+
 }
 
 export const socialLinks: SocialLink[] = [
@@ -142,11 +147,11 @@ export const experienceItems: ExperienceItem[] = [
   {
     company: 'Internal Software Systems',
     highlights: [
-      'Worked on real-world internal software used to support business workflows and operational reporting.',
-      'Developed module enhancements using React, TypeScript, Laravel APIs, and database-backed CRUD operations.',
-      'Applied MVC and OOP principles while organizing code around clear models, controllers, services, and reusable UI pieces.',
-      'Integrated frontend screens with backend endpoints, validated user input, and handled data loading states.',
-      'Joined meetings, clarified business requirements, and translated feedback into practical software improvements.',
+      'Contributed to the development of an internal analytics and monitoring system used to track business performance and operational metrics.',
+      'Developed and maintained dashboard pages, reports, and data visualizations using PHP, JavaScript, HTML, and CSS',
+      'Integrated database queries and backend logic to retrieve, process, and display analytics data from multiple data sources.',
+      'Assisted in implementing AI-powered insights and recommendation features to support business decision-making and performance analysis.',
+      'Collaborated with the development team to gather requirements, troubleshoot issues, validate data accuracy, and deliver system improvements.',
     ],
     period: 'Internship Experience',
     role: 'Software Developer Intern',
@@ -155,15 +160,20 @@ export const experienceItems: ExperienceItem[] = [
 
 export const projects: Project[] = [
   {
+    category: 'Website',
     contributions: [
-      'Designed a clean monitoring interface for farm metrics and alert states.',
-      'Structured data cards and dashboard views for fast scanning by non-technical users.',
-      'Planned AI-assisted insights around crop conditions, sensor readings, and decision support.',
+      'Member authentication with role-aware access.',
+      'Project management with task assignment and Kanban task movement.',
+      'Manager approval, change logs, file uploads, and a role-aware dashboard.',
     ],
     description:
-      'A smart agriculture concept focused on making farm status, sensor data, and AI-assisted recommendations easier to understand.',
-    stack: ['React', 'TypeScript', 'Supabase', 'Tailwind CSS'],
-    title: 'Smart Farm AI',
+      'Management Tool is a full-stack project management application built for a developer assessment. It uses a Next.js frontend, a NestJS backend, Prisma, and PostgreSQL through Supabase.',
+    githubUrl: 'https://github.com/sherwin-anthony/Management-Tool-Task',
+    imageUrl: managementToolScreenshot,
+    listLabel: 'Main Features',
+    liveUrl: 'https://frontend-murex-nine-78.vercel.app/',
+    stack: ['Next.js', 'NestJS', 'Axios', 'Prisma', 'Swagger', 'PostgreSQL', 'Vercel'],
+    title: 'Management Tool',
     type: 'ai',
   },
   {
