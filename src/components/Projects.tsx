@@ -17,10 +17,10 @@ const visualStyles: Record<Project['type'], string> = {
 function ProjectVisual({ project }: { project: Project }) {
   if (project.imageUrl) {
     return (
-      <div className="overflow-hidden rounded-lg border border-border bg-surface shadow-[var(--shadow-card)]">
+      <div className="overflow-hidden rounded-lg border border-border bg-surface-muted shadow-[var(--shadow-card)]">
         <img
           alt={`${project.title} screenshot`}
-          className="aspect-video w-full object-cover object-top"
+          className="aspect-[2.16/1] w-full object-contain"
           height="720"
           loading="lazy"
           src={project.imageUrl}

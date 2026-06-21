@@ -1,4 +1,5 @@
 import managementToolScreenshot from '../assets/projects/management-tool.jpg'
+import franchiseAnalyticsScreenshot from '../assets/projects/franchise-analytics-system.jpg'
 import type { IconName } from '../components/ui/Icon'
 
 export type NavItem = {
@@ -177,15 +178,20 @@ export const projects: Project[] = [
     type: 'ai',
   },
   {
+    category: 'Website',
     contributions: [
-      'Built dashboard layouts for monitoring branch-level franchise performance.',
-      'Modeled charts, status cards, and report summaries around business questions.',
-      'Focused on readable analytics screens that help owners detect trends and issues quickly.',
+      'KPI Dashboard & Analytics: monitor sales, expenses, inventory performance, and branch health through interactive dashboards.',
+      'AI-Powered Insights: generate automated business summaries and actionable recommendations based on branch performance and operational data.',
+      'Performance Monitoring & Reporting: compare monthly trends, identify underperforming branches, and visualize business data for informed decision-making.',
     ],
     description:
-      'A monitoring system concept for franchise operations, sales activity, and performance analytics across locations.',
-    stack: ['React', 'TypeScript', 'SQL', 'REST APIs'],
-    title: 'Franchise Analytics Monitoring System',
+      'The platform provides visual reports, key business metrics, inventory monitoring, and AI-generated recommendations to support better operational and financial decisions across multiple franchise locations.',
+    githubUrl: 'https://github.com/sherwin-anthony/Franchise-Analytics-',
+    imageUrl: franchiseAnalyticsScreenshot,
+    listLabel: 'Main Features',
+    liveUrl: 'https://frontend-murex-nine-78.vercel.app/',
+    stack: ['PHP', 'CSS', 'HTML', 'JavaScript', 'PostgreSQL'],
+    title: 'Franchise Analytics System',
     type: 'analytics',
   },
   {
