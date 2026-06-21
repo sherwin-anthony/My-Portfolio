@@ -190,32 +190,8 @@ export const projects: Project[] = [
     imageUrl: franchiseAnalyticsScreenshot,
     listLabel: 'Main Features',
     liveUrl: 'https://frontend-murex-nine-78.vercel.app/',
-    stack: ['PHP', 'CSS', 'HTML', 'JavaScript', 'PostgreSQL'],
+    stack: ['PHP', 'CSS', 'HTML', 'JavaScript', 'PostgreSQL','Vercel'],
     title: 'Franchise Analytics System',
     type: 'analytics',
-  },
-  {
-    contributions: [
-      'Implemented create, read, update, and delete flows with form validation.',
-      'Separated responsibilities across MVC layers for clearer maintenance.',
-      'Connected database operations to user-facing screens and tested common record workflows.',
-    ],
-    description:
-      'A structured CRUD application demonstrating MVC architecture, database integration, and practical business record management.',
-    stack: ['PHP', 'Laravel', 'MySQL', 'MVC'],
-    title: 'CRUD MVC Application',
-    type: 'mvc',
-  },
-  {
-    contributions: [
-      'Created responsive web screens and mobile-first interface layouts.',
-      'Practiced reusable components, navigation flows, and user-friendly form handling.',
-      'Applied version control habits and documentation for clearer project handoff.',
-    ],
-    description:
-      'A collection of web and mobile development exercises focused on practical UI flows, clean implementation, and continuous learning.',
-    stack: ['React', 'Kotlin', 'C#', 'GitHub'],
-    title: 'Additional Web/Mobile Projects',
-    type: 'mobile',
   },
 ]
