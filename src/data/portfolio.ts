@@ -191,7 +191,7 @@ export const projects: Project[] = [
     githubUrl: 'https://github.com/sherwin-anthony/Franchise-Analytics-',
     imageUrl: franchiseAnalyticsScreenshot,
     listLabel: 'Main Features',
-    liveUrl: 'https://frontend-murex-nine-78.vercel.app/',
+    liveUrl: 'https://franchise-analytics.vercel.app/',
     stack: ['PHP', 'CSS', 'HTML', 'JavaScript', 'PostgreSQL','Vercel'],
     title: 'Franchise Analytics System',
     type: 'analytics',
